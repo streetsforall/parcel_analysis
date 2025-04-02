@@ -1,2 +1,6 @@
 data/*
 .venv
+
+output/*
+
+.DS_Store
