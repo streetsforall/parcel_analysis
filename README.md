@@ -1,6 +1,6 @@
 ## City of LA Parcel Tax X Zoning Analysis
 
-This project currently uses 4 different data sources (although we should discuss removing some - they were useful for sanity checking parcel tax payments but at the end of the day are duplicative)
+This project currently uses 3 different data sources (although we should discuss removing some - they were useful for sanity checking parcel tax payments but at the end of the day are duplicative)
 
 These datasets are too big for github but here are locations where they can be retrieved:
 
