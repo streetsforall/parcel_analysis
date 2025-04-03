@@ -4,3 +4,4 @@ data/*
 output/*
 
 .DS_Store
+process_merge.py
