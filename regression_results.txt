@@ -1,0 +1,1169 @@
+
+Running analysis without outlier trimming...
+
+================================================================================
+ANALYZING: Filter 2015, use acreage
+================================================================================
+use age False
+22701
+After dropping NaN in required fields: 22701
+22701
+22701
+22701
+
+Processing zone: R3 (Data: 5177 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 5177 samples
+  Linear Regression: R² = 0.1924, CV R² = 0.2107, RMSE = 49912.42, MAE = 14316.44
+  Ridge Regression: R² = 0.1921, CV R² = 0.2109, RMSE = 49920.58, MAE = 14323.68
+  Lasso Regression: R² = 0.1924, CV R² = 0.2107, RMSE = 49912.46, MAE = 14316.48
+  ElasticNet: R² = 0.1506, CV R² = 0.2009, RMSE = 51186.52, MAE = 15335.67
+  SVR: R² = -0.1055, CV R² = -0.1318, RMSE = 58395.66, MAE = 17923.85
+  Random Forest: R² = 0.2680, CV R² = 0.0575, RMSE = 47517.82, MAE = 12491.04
+  Gradient Boosting: R² = 0.1351, CV R² = -0.1006, RMSE = 51650.74, MAE = 12515.62
+
+Processing zone: R4 (Data: 937 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 937 samples
+  Linear Regression: R² = 0.1313, CV R² = -0.2504, RMSE = 399417.37, MAE = 166318.82
+  Ridge Regression: R² = 0.1312, CV R² = -0.2495, RMSE = 399426.95, MAE = 166329.77
+  Lasso Regression: R² = 0.1313, CV R² = -0.2504, RMSE = 399417.38, MAE = 166318.82
+  ElasticNet: R² = 0.1299, CV R² = -0.2169, RMSE = 399728.76, MAE = 166672.41
+  SVR: R² = -0.1255, CV R² = -0.1547, RMSE = 454627.92, MAE = 151869.68
+  Random Forest: R² = 0.0910, CV R² = 0.0163, RMSE = 408567.82, MAE = 135370.88
+  Gradient Boosting: R² = 0.1348, CV R² = -0.0561, RMSE = 398595.51, MAE = 131837.57
+
+Processing zone: R5 (Data: 37 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 37 samples
+  Linear Regression: R² = 0.6665, CV R² = 0.0590, RMSE = 1260318.15, MAE = 1067538.14
+  Ridge Regression: R² = 0.7203, CV R² = 0.0809, RMSE = 1154233.23, MAE = 1018624.49
+  Lasso Regression: R² = 0.6665, CV R² = 0.0590, RMSE = 1260317.90, MAE = 1067537.80
+  ElasticNet: R² = 0.7204, CV R² = 0.0882, RMSE = 1154096.83, MAE = 1009134.67
+  SVR: R² = -1.2693, CV R² = -1.1744, RMSE = 3287714.95, MAE = 2458863.71
+  Random Forest: R² = -0.0260, CV R² = 0.0018, RMSE = 2210618.61, MAE = 1561208.37
+  Gradient Boosting: R² = -0.1890, CV R² = -0.0625, RMSE = 2379790.40, MAE = 1668842.41
+
+--- BEST MODEL FOR EACH ZONING BUCKET (Feature Set: acreage_only) ---
+
+ZONE: R3 (Samples: 5177, Features: 2, all data)
+Best model: Random Forest
+R² Score: 0.2680
+CV R² Score: 0.0575
+RMSE: 47517.82
+MAE: 12491.04
+
+ZONE: R4 (Samples: 937, Features: 2, all data)
+Best model: Gradient Boosting
+R² Score: 0.1348
+CV R² Score: -0.0561
+RMSE: 398595.51
+MAE: 131837.57
+
+ZONE: R5 (Samples: 37, Features: 2, all data)
+Best model: ElasticNet
+R² Score: 0.7204
+CV R² Score: 0.0882
+RMSE: 1154096.83
+MAE: 1009134.67
+
+================================================================================
+ANALYZING: Filter 2015, use acreage, latitude/longitude
+================================================================================
+use age False
+22701
+After dropping NaN in required fields: 22701
+22701
+22701
+22701
+
+Processing zone: R3 (Data: 5177 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 5177 samples
+  Linear Regression: R² = 0.1949, CV R² = 0.1780, RMSE = 49833.88, MAE = 14624.07
+  Ridge Regression: R² = 0.1947, CV R² = 0.1807, RMSE = 49839.59, MAE = 14593.69
+  Lasso Regression: R² = 0.1949, CV R² = 0.1781, RMSE = 49833.89, MAE = 14623.77
+  ElasticNet: R² = 0.1512, CV R² = 0.1992, RMSE = 51168.53, MAE = 15313.63
+  SVR: R² = -0.1055, CV R² = -0.1316, RMSE = 58396.27, MAE = 17903.25
+  Random Forest: R² = 0.3947, CV R² = 0.2985, RMSE = 43212.16, MAE = 9714.95
+  Gradient Boosting: R² = 0.3742, CV R² = 0.3097, RMSE = 43934.78, MAE = 10712.91
+
+Processing zone: R4 (Data: 937 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 937 samples
+  Linear Regression: R² = 0.1406, CV R² = -0.2755, RMSE = 397269.91, MAE = 164971.65
+  Ridge Regression: R² = 0.1393, CV R² = -0.2669, RMSE = 397561.31, MAE = 164961.86
+  Lasso Regression: R² = 0.1406, CV R² = -0.2755, RMSE = 397270.03, MAE = 164971.57
+  ElasticNet: R² = 0.1318, CV R² = -0.2178, RMSE = 399302.44, MAE = 166245.54
+  SVR: R² = -0.1255, CV R² = -0.1547, RMSE = 454625.94, MAE = 151871.77
+  Random Forest: R² = 0.1260, CV R² = -0.3419, RMSE = 400614.75, MAE = 123590.74
+  Gradient Boosting: R² = 0.0547, CV R² = -0.6318, RMSE = 416649.99, MAE = 130886.77
+
+Processing zone: R5 (Data: 37 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 37 samples
+  Linear Regression: R² = 0.7350, CV R² = -1.1099, RMSE = 1123487.58, MAE = 996493.47
+  Ridge Regression: R² = 0.7205, CV R² = 0.0788, RMSE = 1153757.84, MAE = 1018334.45
+  Lasso Regression: R² = 0.7350, CV R² = -1.1097, RMSE = 1123491.48, MAE = 996496.90
+  ElasticNet: R² = 0.7205, CV R² = 0.0869, RMSE = 1153746.21, MAE = 1008907.10
+  SVR: R² = -1.2693, CV R² = -1.1743, RMSE = 3287718.58, MAE = 2458865.01
+  Random Forest: R² = 0.0932, CV R² = -0.6174, RMSE = 2078219.35, MAE = 1474068.62
+  Gradient Boosting: R² = 0.0135, CV R² = -2.0563, RMSE = 2167672.99, MAE = 1538358.81
+
+--- BEST MODEL FOR EACH ZONING BUCKET (Feature Set: acreage_latlon) ---
+
+ZONE: R3 (Samples: 5177, Features: 4, all data)
+Best model: Random Forest
+R² Score: 0.3947
+CV R² Score: 0.2985
+RMSE: 43212.16
+MAE: 9714.95
+
+ZONE: R4 (Samples: 937, Features: 4, all data)
+Best model: Linear Regression
+R² Score: 0.1406
+CV R² Score: -0.2755
+RMSE: 397269.91
+MAE: 164971.65
+
+ZONE: R5 (Samples: 37, Features: 4, all data)
+Best model: Linear Regression
+R² Score: 0.7350
+CV R² Score: -1.1099
+RMSE: 1123487.58
+MAE: 996493.47
+
+================================================================================
+ANALYZING: Filter 2015, use acreage, zip code encoded
+================================================================================
+use age False
+22701
+After dropping NaN in required fields: 22701
+22701
+22701
+22701
+
+Processing zone: R3 (Data: 5177 samples)
+NaN values in feature columns before filtering:
+  zip_code: 104 NaNs
+After removing NaNs in features: 5073 samples
+  Linear Regression: R² = 0.3972, CV R² = -0.5075, RMSE = 36351.41, MAE = 13607.30
+  Ridge Regression: R² = 0.3963, CV R² = -0.0702, RMSE = 36380.16, MAE = 13561.93
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.601e+12, tolerance: 9.834e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.156e+12, tolerance: 1.000e+09
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.716e+12, tolerance: 1.088e+09
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.577e+12, tolerance: 1.107e+09
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.731e+12, tolerance: 9.452e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.628e+12, tolerance: 1.128e+09
+  model = cd_fast.enet_coordinate_descent(
+  Lasso Regression: R² = 0.3961, CV R² = -0.2787, RMSE = 36383.60, MAE = 13596.50
+  ElasticNet: R² = 0.2910, CV R² = 0.2002, RMSE = 39423.45, MAE = 14532.83
+  SVR: R² = -0.1438, CV R² = -0.1307, RMSE = 50074.50, MAE = 17648.62
+  Random Forest: R² = 0.3214, CV R² = 0.1873, RMSE = 38569.36, MAE = 9615.20
+  Gradient Boosting: R² = 0.2818, CV R² = 0.1891, RMSE = 39677.72, MAE = 11497.18
+
+Processing zone: R4 (Data: 937 samples)
+NaN values in feature columns before filtering:
+  zip_code: 29 NaNs
+After removing NaNs in features: 908 samples
+  Linear Regression: R² = -0.2170, CV R² = -0.1263, RMSE = 508726.31, MAE = 179887.11
+  Ridge Regression: R² = 0.2096, CV R² = -0.1327, RMSE = 409991.33, MAE = 148276.81
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.638e+13, tolerance: 7.947e+09
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.715e+13, tolerance: 1.066e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.187e+13, tolerance: 9.480e+09
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.513e+13, tolerance: 1.071e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.021e+13, tolerance: 1.213e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.689e+13, tolerance: 1.201e+10
+  model = cd_fast.enet_coordinate_descent(
+  Lasso Regression: R² = -0.2024, CV R² = -0.1177, RMSE = 505677.88, MAE = 179375.36
+  ElasticNet: R² = 0.1930, CV R² = -0.1759, RMSE = 414275.87, MAE = 161187.14
+  SVR: R² = -0.1108, CV R² = -0.1543, RMSE = 486039.43, MAE = 153583.62
+  Random Forest: R² = 0.2509, CV R² = 0.2069, RMSE = 399120.51, MAE = 132893.81
+  Gradient Boosting: R² = 0.0979, CV R² = 0.2240, RMSE = 437995.70, MAE = 154111.10
+
+Processing zone: R5 (Data: 37 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 37 samples
+  Linear Regression: R² = -1061469305306694.0000, CV R² = -0.6142, RMSE = 71104996054788.98, MAE = 20526245318439.93
+  Ridge Regression: R² = 0.5417, CV R² = -0.5774, RMSE = 1477519.40, MAE = 1157509.41
+  Lasso Regression: R² = 0.5286, CV R² = -0.5403, RMSE = 1498502.90, MAE = 1232145.66
+  ElasticNet: R² = 0.5555, CV R² = -0.5733, RMSE = 1455143.10, MAE = 1134221.38
+  SVR: R² = -1.2693, CV R² = -1.1743, RMSE = 3287719.11, MAE = 2458860.45
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.978e+12, tolerance: 3.927e+09
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.728e+12, tolerance: 1.002e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.989e+12, tolerance: 1.066e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.524e+12, tolerance: 9.217e+09
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.239e+12, tolerance: 1.031e+10
+  model = cd_fast.enet_coordinate_descent(
+  Random Forest: R² = -0.0082, CV R² = -0.1769, RMSE = 2191342.78, MAE = 1538801.47
+  Gradient Boosting: R² = -0.0268, CV R² = -0.5519, RMSE = 2211486.06, MAE = 1536227.74
+
+--- BEST MODEL FOR EACH ZONING BUCKET (Feature Set: acreage_zipcode) ---
+
+ZONE: R3 (Samples: 5073, Features: 130, all data)
+Best model: Linear Regression
+R² Score: 0.3972
+CV R² Score: -0.5075
+RMSE: 36351.41
+MAE: 13607.30
+
+ZONE: R4 (Samples: 908, Features: 130, all data)
+Best model: Random Forest
+R² Score: 0.2509
+CV R² Score: 0.2069
+RMSE: 399120.51
+MAE: 132893.81
+
+ZONE: R5 (Samples: 37, Features: 130, all data)
+Best model: ElasticNet
+R² Score: 0.5555
+CV R² Score: -0.5733
+RMSE: 1455143.10
+MAE: 1134221.38
+
+================================================================================
+ANALYZING: Full data set, acreage, use parcel age, latitude/longitude
+================================================================================
+use age True
+641487
+After dropping NaN in required fields: 635846
+635846
+635846
+635846
+
+Processing zone: R3 (Data: 109314 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 109314 samples
+  Linear Regression: R² = 0.1314, CV R² = 0.0706, RMSE = 31994.69, MAE = 9332.73
+  Ridge Regression: R² = 0.1314, CV R² = 0.0708, RMSE = 31994.70, MAE = 9332.19
+  Lasso Regression: R² = 0.1314, CV R² = 0.0707, RMSE = 31994.69, MAE = 9332.69
+  ElasticNet: R² = 0.1210, CV R² = 0.0740, RMSE = 32185.69, MAE = 9604.56
+  SVR: R² = 0.0301, CV R² = 0.0226, RMSE = 33807.51, MAE = 8615.59
+  Random Forest: R² = 0.2921, CV R² = -0.2672, RMSE = 28882.28, MAE = 7465.31
+  Gradient Boosting: R² = 0.2834, CV R² = -0.0698, RMSE = 29059.50, MAE = 8071.49
+
+Processing zone: R4 (Data: 39874 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 39874 samples
+  Linear Regression: R² = 0.1459, CV R² = 0.0155, RMSE = 147806.77, MAE = 30592.67
+  Ridge Regression: R² = 0.1459, CV R² = 0.0169, RMSE = 147806.67, MAE = 30587.33
+  Lasso Regression: R² = 0.1459, CV R² = 0.0156, RMSE = 147806.78, MAE = 30592.45
+  ElasticNet: R² = 0.1412, CV R² = 0.0987, RMSE = 148215.01, MAE = 30605.14
+  SVR: R² = -0.0115, CV R² = -0.0121, RMSE = 160850.09, MAE = 26066.37
+  Random Forest: R² = 0.3446, CV R² = -0.3106, RMSE = 129480.52, MAE = 22823.14
+  Gradient Boosting: R² = 0.2960, CV R² = -0.7593, RMSE = 134192.43, MAE = 25028.95
+
+Processing zone: R5 (Data: 993 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 993 samples
+  Linear Regression: R² = -0.2639, CV R² = -2.0457, RMSE = 603452.57, MAE = 241282.48
+  Ridge Regression: R² = -0.2538, CV R² = -1.8464, RMSE = 601050.18, MAE = 232597.93
+  Lasso Regression: R² = -0.2639, CV R² = -2.0456, RMSE = 603452.10, MAE = 241280.46
+  ElasticNet: R² = -0.1549, CV R² = -1.4512, RMSE = 576855.26, MAE = 234323.82
+  SVR: R² = -0.1330, CV R² = -0.1350, RMSE = 571366.43, MAE = 195924.28
+  Random Forest: R² = 0.6040, CV R² = -0.5075, RMSE = 337794.87, MAE = 150444.56
+  Gradient Boosting: R² = 0.5674, CV R² = -0.0179, RMSE = 353036.63, MAE = 164059.95
+
+--- BEST MODEL FOR EACH ZONING BUCKET (Feature Set: acreage_age_latlon) ---
+
+ZONE: R3 (Samples: 109314, Features: 4, all data)
+Best model: Random Forest
+R² Score: 0.2921
+CV R² Score: -0.2672
+RMSE: 28882.28
+MAE: 7465.31
+
+ZONE: R4 (Samples: 39874, Features: 4, all data)
+Best model: Random Forest
+R² Score: 0.3446
+CV R² Score: -0.3106
+RMSE: 129480.52
+MAE: 22823.14
+
+ZONE: R5 (Samples: 993, Features: 4, all data)
+Best model: Random Forest
+R² Score: 0.6040
+CV R² Score: -0.5075
+RMSE: 337794.87
+MAE: 150444.56
+
+================================================================================
+ANALYZING: Full data set, acreage, parcel age, zip code encoded
+================================================================================
+use age True
+641487
+After dropping NaN in required fields: 635846
+635846
+635846
+635846
+
+Processing zone: R3 (Data: 109314 samples)
+NaN values in feature columns before filtering:
+  zip_code: 3409 NaNs
+After removing NaNs in features: 105905 samples
+  Linear Regression: R² = 0.1443, CV R² = -0.3637, RMSE = 28228.90, MAE = 8642.30
+  Ridge Regression: R² = 0.1443, CV R² = -0.2839, RMSE = 28229.42, MAE = 8637.46
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.956e+13, tolerance: 1.272e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.830e+13, tolerance: 1.113e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.250e+13, tolerance: 1.199e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.686e+13, tolerance: 1.023e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.940e+13, tolerance: 1.513e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.378e+13, tolerance: 1.421e+10
+  model = cd_fast.enet_coordinate_descent(
+  Lasso Regression: R² = 0.1443, CV R² = -0.3230, RMSE = 28229.62, MAE = 8639.19
+  ElasticNet: R² = 0.1438, CV R² = 0.0930, RMSE = 28237.37, MAE = 9053.01
+  SVR: R² = 0.0884, CV R² = 0.0392, RMSE = 29136.31, MAE = 8052.90
+  Random Forest: R² = 0.3805, CV R² = -2.6858, RMSE = 24018.66, MAE = 7626.53
+  Gradient Boosting: R² = 0.3328, CV R² = -11.7556, RMSE = 24926.04, MAE = 8153.80
+
+Processing zone: R4 (Data: 39874 samples)
+NaN values in feature columns before filtering:
+  zip_code: 2710 NaNs
+After removing NaNs in features: 37164 samples
+  Linear Regression: R² = 0.2323, CV R² = -0.1164, RMSE = 122632.82, MAE = 28900.06
+  Ridge Regression: R² = 0.2352, CV R² = -0.0405, RMSE = 122404.18, MAE = 28850.24
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.567e+14, tolerance: 6.588e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.685e+14, tolerance: 6.717e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.552e+14, tolerance: 4.390e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.881e+14, tolerance: 7.630e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.984e+14, tolerance: 7.813e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.199e+14, tolerance: 8.528e+10
+  model = cd_fast.enet_coordinate_descent(
+  Lasso Regression: R² = 0.2323, CV R² = -0.0298, RMSE = 122639.27, MAE = 28898.19
+  ElasticNet: R² = 0.1966, CV R² = 0.1056, RMSE = 125459.19, MAE = 29363.22
+  SVR: R² = -0.0105, CV R² = -0.0103, RMSE = 140698.31, MAE = 25691.76
+  Random Forest: R² = 0.1138, CV R² = 0.1011, RMSE = 131761.12, MAE = 24145.77
+  Gradient Boosting: R² = 0.0811, CV R² = 0.1589, RMSE = 134169.27, MAE = 26657.41
+
+Processing zone: R5 (Data: 993 samples)
+NaN values in feature columns before filtering:
+  zip_code: 98 NaNs
+After removing NaNs in features: 895 samples
+  Linear Regression: R² = 0.2265, CV R² = -10.6850, RMSE = 492319.94, MAE = 243188.11
+  Ridge Regression: R² = 0.2999, CV R² = -14.0461, RMSE = 468391.44, MAE = 237102.24
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.268e+14, tolerance: 4.068e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.450e+14, tolerance: 4.717e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.343e+14, tolerance: 4.298e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.005e+14, tolerance: 3.500e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.223e+13, tolerance: 2.348e+10
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.407e+14, tolerance: 4.778e+10
+  model = cd_fast.enet_coordinate_descent(
+  Lasso Regression: R² = 0.2265, CV R² = -15.9307, RMSE = 492318.67, MAE = 243187.97
+  ElasticNet: R² = 0.3913, CV R² = -19.3490, RMSE = 436751.19, MAE = 235178.80
+  SVR: R² = -0.1219, CV R² = -0.1470, RMSE = 592907.42, MAE = 195585.50
+  Random Forest: R² = 0.3889, CV R² = -0.2885, RMSE = 437580.30, MAE = 181684.58
+  Gradient Boosting: R² = 0.5027, CV R² = -0.2298, RMSE = 394747.03, MAE = 168708.23
+
+--- BEST MODEL FOR EACH ZONING BUCKET (Feature Set: acreage_age_zipcode) ---
+
+ZONE: R3 (Samples: 105905, Features: 195, all data)
+Best model: Random Forest
+R² Score: 0.3805
+CV R² Score: -2.6858
+RMSE: 24018.66
+MAE: 7626.53
+
+ZONE: R4 (Samples: 37164, Features: 195, all data)
+Best model: Ridge Regression
+R² Score: 0.2352
+CV R² Score: -0.0405
+RMSE: 122404.18
+MAE: 28850.24
+
+ZONE: R5 (Samples: 895, Features: 195, all data)
+Best model: Gradient Boosting
+R² Score: 0.5027
+CV R² Score: -0.2298
+RMSE: 394747.03
+MAE: 168708.23
+   zone          feature_set         best_model  r2_score  cv_r2_score  \
+0    R3         acreage_only      Random Forest  0.268015     0.057477   
+1    R3       acreage_latlon      Random Forest  0.394657     0.298460   
+2    R3      acreage_zipcode  Linear Regression  0.397204    -0.507538   
+3    R3   acreage_age_latlon      Random Forest  0.292149    -0.267245   
+4    R3  acreage_age_zipcode      Random Forest  0.380518    -2.685808   
+5    R4         acreage_only  Gradient Boosting  0.134830    -0.056092   
+6    R4       acreage_latlon  Linear Regression  0.140575    -0.275473   
+7    R4      acreage_zipcode      Random Forest  0.250938     0.206909   
+8    R4   acreage_age_latlon      Random Forest  0.344551    -0.310597   
+9    R4  acreage_age_zipcode   Ridge Regression  0.235207    -0.040464   
+10   R5         acreage_only         ElasticNet  0.720365     0.088227   
+11   R5       acreage_latlon  Linear Regression  0.735001    -1.109861   
+12   R5      acreage_zipcode         ElasticNet  0.555452    -0.573339   
+13   R5   acreage_age_latlon      Random Forest  0.603972    -0.507486   
+14   R5  acreage_age_zipcode  Gradient Boosting  0.502715    -0.229789   
+
+            rmse  samples  
+0   4.751782e+04     5177  
+1   4.321216e+04     5177  
+2   3.635141e+04     5073  
+3   2.888228e+04   109314  
+4   2.401866e+04   105905  
+5   3.985955e+05      937  
+6   3.972699e+05      937  
+7   3.991205e+05      908  
+8   1.294805e+05    39874  
+9   1.224042e+05    37164  
+10  1.154097e+06       37  
+11  1.123488e+06       37  
+12  1.455143e+06       37  
+13  3.377949e+05      993  
+14  3.947470e+05      895  
+
+=== SINGLE METRIC MODEL SELECTION ===
+
+1. Using only R² Score:
+
+ZONE: R3
+Best feature set: acreage_zipcode
+Best model: Linear Regression
+R² Score: 0.3972
+CV R² Score: -0.5075
+RMSE: 36351.41
+
+ZONE: R4
+Best feature set: acreage_age_latlon
+Best model: Random Forest
+R² Score: 0.3446
+CV R² Score: -0.3106
+RMSE: 129480.52
+
+ZONE: R5
+Best feature set: acreage_latlon
+Best model: Linear Regression
+R² Score: 0.7350
+CV R² Score: -1.1099
+RMSE: 1123487.58
+
+2. Using only RMSE:
+
+ZONE: R3
+Best feature set: acreage_age_zipcode
+Best model: Random Forest
+R² Score: 0.3805
+CV R² Score: -2.6858
+RMSE: 24018.66
+
+ZONE: R4
+Best feature set: acreage_age_zipcode
+Best model: Ridge Regression
+R² Score: 0.2352
+CV R² Score: -0.0405
+RMSE: 122404.18
+
+ZONE: R5
+Best feature set: acreage_age_latlon
+Best model: Random Forest
+R² Score: 0.6040
+CV R² Score: -0.5075
+RMSE: 337794.87
+
+=== MULTI-METRIC MODEL SELECTION ===
+
+Balanced weighting (33% each):
+
+--- OVERALL BEST MODEL & FEATURE SET FOR EACH ZONE (MULTI-METRIC) ---
+Weights: R² = 0.33, CV R² = 0.34, RMSE = 0.33
+
+ZONE: R3 (Samples: 5073)
+Best feature set: acreage_zipcode
+Best model: Linear Regression
+R² Score: 0.3972 (normalized: 1.0000)
+CV R² Score: -0.5075 (normalized: 0.7299)
+RMSE: 36351.41 (normalized: 0.4752)
+Composite Score: 0.7350
+
+Top models by composite score:
+1. Linear Regression (acreage_zipcode): Score = 0.7350, R² = 0.3972, CV R² = -0.5075, RMSE = 36351.41
+2. Random Forest (acreage_latlon): Score = 0.7240, R² = 0.3947, CV R² = 0.2985, RMSE = 43212.16
+3. Random Forest (acreage_age_zipcode): Score = 0.6174, R² = 0.3805, CV R² = -2.6858, RMSE = 24018.66
+
+ZONE: R4 (Samples: 37164)
+Best feature set: acreage_age_zipcode
+Best model: Ridge Regression
+R² Score: 0.2352 (normalized: 0.4786)
+CV R² Score: -0.0405 (normalized: 0.5220)
+RMSE: 122404.18 (normalized: 1.0000)
+Composite Score: 0.6654
+
+Top models by composite score:
+1. Ridge Regression (acreage_age_zipcode): Score = 0.6654, R² = 0.2352, CV R² = -0.0405, RMSE = 122404.18
+2. Random Forest (acreage_age_latlon): Score = 0.6516, R² = 0.3446, CV R² = -0.3106, RMSE = 129480.52
+3. Random Forest (acreage_zipcode): Score = 0.5227, R² = 0.2509, CV R² = 0.2069, RMSE = 399120.51
+
+ZONE: R5 (Samples: 37)
+Best feature set: acreage_only
+Best model: ElasticNet
+R² Score: 0.7204 (normalized: 0.9370)
+CV R² Score: 0.0882 (normalized: 1.0000)
+RMSE: 1154096.83 (normalized: 0.2694)
+Composite Score: 0.7381
+
+Top models by composite score:
+1. ElasticNet (acreage_only): Score = 0.7381, R² = 0.7204, CV R² = 0.0882, RMSE = 1154096.83
+2. Random Forest (acreage_age_latlon): Score = 0.6448, R² = 0.6040, CV R² = -0.5075, RMSE = 337794.87
+3. Gradient Boosting (acreage_age_zipcode): Score = 0.5629, R² = 0.5027, CV R² = -0.2298, RMSE = 394747.03
+
+Cross-validation emphasis (50% CV R²):
+
+--- OVERALL BEST MODEL & FEATURE SET FOR EACH ZONE (MULTI-METRIC) ---
+Weights: R² = 0.25, CV R² = 0.50, RMSE = 0.25
+
+ZONE: R3 (Samples: 5177)
+Best feature set: acreage_latlon
+Best model: Random Forest
+R² Score: 0.3947 (normalized: 0.9803)
+CV R² Score: 0.2985 (normalized: 1.0000)
+RMSE: 43212.16 (normalized: 0.1832)
+Composite Score: 0.7909
+
+Top models by composite score:
+1. Random Forest (acreage_latlon): Score = 0.7909, R² = 0.3947, CV R² = 0.2985, RMSE = 43212.16
+2. Linear Regression (acreage_zipcode): Score = 0.7338, R² = 0.3972, CV R² = -0.5075, RMSE = 36351.41
+3. Random Forest (acreage_age_latlon): Score = 0.6502, R² = 0.2921, CV R² = -0.2672, RMSE = 28882.28
+
+ZONE: R4 (Samples: 908)
+Best feature set: acreage_zipcode
+Best model: Random Forest
+R² Score: 0.2509 (normalized: 0.5536)
+CV R² Score: 0.2069 (normalized: 1.0000)
+RMSE: 399120.51 (normalized: 0.0000)
+Composite Score: 0.6384
+
+Top models by composite score:
+1. Random Forest (acreage_zipcode): Score = 0.6384, R² = 0.2509, CV R² = 0.2069, RMSE = 399120.51
+2. Ridge Regression (acreage_age_zipcode): Score = 0.6307, R² = 0.2352, CV R² = -0.0405, RMSE = 122404.18
+3. Random Forest (acreage_age_latlon): Score = 0.4936, R² = 0.3446, CV R² = -0.3106, RMSE = 129480.52
+
+ZONE: R5 (Samples: 37)
+Best feature set: acreage_only
+Best model: ElasticNet
+R² Score: 0.7204 (normalized: 0.9370)
+CV R² Score: 0.0882 (normalized: 1.0000)
+RMSE: 1154096.83 (normalized: 0.2694)
+Composite Score: 0.8016
+
+Top models by composite score:
+1. ElasticNet (acreage_only): Score = 0.8016, R² = 0.7204, CV R² = 0.0882, RMSE = 1154096.83
+2. Random Forest (acreage_age_latlon): Score = 0.6104, R² = 0.6040, CV R² = -0.5075, RMSE = 337794.87
+3. Gradient Boosting (acreage_age_zipcode): Score = 0.6045, R² = 0.5027, CV R² = -0.2298, RMSE = 394747.03
+
+RMSE emphasis (50% RMSE):
+
+--- OVERALL BEST MODEL & FEATURE SET FOR EACH ZONE (MULTI-METRIC) ---
+Weights: R² = 0.25, CV R² = 0.25, RMSE = 0.50
+
+ZONE: R3 (Samples: 105905)
+Best feature set: acreage_age_zipcode
+Best model: Random Forest
+R² Score: 0.3805 (normalized: 0.8708)
+CV R² Score: -2.6858 (normalized: 0.0000)
+RMSE: 24018.66 (normalized: 1.0000)
+Composite Score: 0.7177
+
+Top models by composite score:
+1. Random Forest (acreage_age_zipcode): Score = 0.7177, R² = 0.3805, CV R² = -2.6858, RMSE = 24018.66
+2. Linear Regression (acreage_zipcode): Score = 0.6701, R² = 0.3972, CV R² = -0.5075, RMSE = 36351.41
+3. Random Forest (acreage_age_latlon): Score = 0.6458, R² = 0.2921, CV R² = -0.2672, RMSE = 28882.28
+
+ZONE: R4 (Samples: 37164)
+Best feature set: acreage_age_zipcode
+Best model: Ridge Regression
+R² Score: 0.2352 (normalized: 0.4786)
+CV R² Score: -0.0405 (normalized: 0.5220)
+RMSE: 122404.18 (normalized: 1.0000)
+Composite Score: 0.7502
+
+Top models by composite score:
+1. Ridge Regression (acreage_age_zipcode): Score = 0.7502, R² = 0.2352, CV R² = -0.0405, RMSE = 122404.18
+2. Random Forest (acreage_age_latlon): Score = 0.7372, R² = 0.3446, CV R² = -0.3106, RMSE = 129480.52
+3. Random Forest (acreage_zipcode): Score = 0.3884, R² = 0.2509, CV R² = 0.2069, RMSE = 399120.51
+
+ZONE: R5 (Samples: 993)
+Best feature set: acreage_age_latlon
+Best model: Random Forest
+R² Score: 0.6040 (normalized: 0.4359)
+CV R² Score: -0.5075 (normalized: 0.5028)
+RMSE: 337794.87 (normalized: 1.0000)
+Composite Score: 0.7347
+
+Top models by composite score:
+1. Random Forest (acreage_age_latlon): Score = 0.7347, R² = 0.6040, CV R² = -0.5075, RMSE = 337794.87
+2. Gradient Boosting (acreage_age_zipcode): Score = 0.6582, R² = 0.5027, CV R² = -0.2298, RMSE = 394747.03
+3. ElasticNet (acreage_only): Score = 0.6190, R² = 0.7204, CV R² = 0.0882, RMSE = 1154096.83
+
+Running analysis with outlier trimming...
+
+================================================================================
+ANALYZING: Filter 2015, use acreage
+================================================================================
+use age False
+22701
+After dropping NaN in required fields: 22701
+22701
+22701
+Trimmed 725 outliers (3.2% of data)
+21976
+
+Processing zone: R3 (Data: 4881 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 4881 samples
+  Linear Regression: R² = 0.4819, CV R² = 0.3983, RMSE = 19491.86, MAE = 10141.91
+  Ridge Regression: R² = 0.4772, CV R² = 0.4001, RMSE = 19581.25, MAE = 10092.21
+  Lasso Regression: R² = 0.4819, CV R² = 0.3983, RMSE = 19492.08, MAE = 10141.77
+  ElasticNet: R² = 0.1265, CV R² = 0.1212, RMSE = 25310.07, MAE = 12373.09
+  SVR: R² = -0.3079, CV R² = -0.3426, RMSE = 30969.87, MAE = 15066.85
+  Random Forest: R² = 0.4540, CV R² = 0.3056, RMSE = 20010.01, MAE = 9487.01
+  Gradient Boosting: R² = 0.5277, CV R² = 0.4156, RMSE = 18610.53, MAE = 8944.69
+
+Processing zone: R4 (Data: 730 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 730 samples
+  Linear Regression: R² = 0.3340, CV R² = 0.2228, RMSE = 52199.70, MAE = 33671.06
+  Ridge Regression: R² = 0.3299, CV R² = 0.2224, RMSE = 52358.67, MAE = 33867.77
+  Lasso Regression: R² = 0.3340, CV R² = 0.2228, RMSE = 52199.75, MAE = 33671.13
+  ElasticNet: R² = 0.2214, CV R² = 0.1231, RMSE = 56441.25, MAE = 37797.44
+  SVR: R² = -0.5482, CV R² = -0.5510, RMSE = 79587.32, MAE = 47359.66
+  Random Forest: R² = 0.1545, CV R² = 0.0022, RMSE = 58815.78, MAE = 34336.40
+  Gradient Boosting: R² = 0.2789, CV R² = 0.1569, RMSE = 54314.09, MAE = 32322.78
+Skipping zone R5 - insufficient data (only 5 samples)
+
+--- BEST MODEL FOR EACH ZONING BUCKET (Feature Set: acreage_only) ---
+
+ZONE: R3 (Samples: 4881, Features: 2, with outliers trimmed)
+Best model: Gradient Boosting
+R² Score: 0.5277
+CV R² Score: 0.4156
+RMSE: 18610.53
+MAE: 8944.69
+
+ZONE: R4 (Samples: 730, Features: 2, with outliers trimmed)
+Best model: Linear Regression
+R² Score: 0.3340
+CV R² Score: 0.2228
+RMSE: 52199.70
+MAE: 33671.06
+
+================================================================================
+ANALYZING: Filter 2015, use acreage, latitude/longitude
+================================================================================
+use age False
+22701
+After dropping NaN in required fields: 22701
+22701
+22701
+Trimmed 725 outliers (3.2% of data)
+21976
+
+Processing zone: R3 (Data: 4881 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 4881 samples
+  Linear Regression: R² = 0.4920, CV R² = 0.3478, RMSE = 19301.49, MAE = 10476.59
+  Ridge Regression: R² = 0.4870, CV R² = 0.3537, RMSE = 19396.87, MAE = 10410.58
+  Lasso Regression: R² = 0.4920, CV R² = 0.3479, RMSE = 19301.75, MAE = 10476.07
+  ElasticNet: R² = 0.1280, CV R² = 0.1171, RMSE = 25287.90, MAE = 12352.78
+  SVR: R² = -0.3073, CV R² = -0.3421, RMSE = 30962.81, MAE = 15037.68
+  Random Forest: R² = 0.6711, CV R² = 0.3367, RMSE = 15530.38, MAE = 6477.89
+  Gradient Boosting: R² = 0.6529, CV R² = 0.4409, RMSE = 15953.34, MAE = 7352.86
+
+Processing zone: R4 (Data: 730 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 730 samples
+  Linear Regression: R² = 0.3322, CV R² = -0.0769, RMSE = 52267.96, MAE = 33684.98
+  Ridge Regression: R² = 0.3288, CV R² = 0.0126, RMSE = 52403.96, MAE = 33866.73
+  Lasso Regression: R² = 0.3322, CV R² = -0.0768, RMSE = 52267.98, MAE = 33685.05
+  ElasticNet: R² = 0.2219, CV R² = 0.1019, RMSE = 56420.55, MAE = 37790.25
+  SVR: R² = -0.5482, CV R² = -0.5510, RMSE = 79587.32, MAE = 47359.66
+  Random Forest: R² = 0.4827, CV R² = 0.3175, RMSE = 46004.01, MAE = 26504.35
+  Gradient Boosting: R² = 0.4598, CV R² = 0.2976, RMSE = 47013.43, MAE = 27551.64
+Skipping zone R5 - insufficient data (only 5 samples)
+
+--- BEST MODEL FOR EACH ZONING BUCKET (Feature Set: acreage_latlon) ---
+
+ZONE: R3 (Samples: 4881, Features: 4, with outliers trimmed)
+Best model: Random Forest
+R² Score: 0.6711
+CV R² Score: 0.3367
+RMSE: 15530.38
+MAE: 6477.89
+
+ZONE: R4 (Samples: 730, Features: 4, with outliers trimmed)
+Best model: Random Forest
+R² Score: 0.4827
+CV R² Score: 0.3175
+RMSE: 46004.01
+MAE: 26504.35
+
+================================================================================
+ANALYZING: Filter 2015, use acreage, zip code encoded
+================================================================================
+use age False
+22701
+After dropping NaN in required fields: 22701
+22701
+22701
+Trimmed 725 outliers (3.2% of data)
+21976
+
+Processing zone: R3 (Data: 4881 samples)
+NaN values in feature columns before filtering:
+  zip_code: 92 NaNs
+After removing NaNs in features: 4789 samples
+  Linear Regression: R² = 0.5398, CV R² = 0.1064, RMSE = 16614.89, MAE = 8728.96
+  Ridge Regression: R² = 0.5432, CV R² = 0.3524, RMSE = 16552.65, MAE = 8574.14
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.381e+11, tolerance: 2.002e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.238e+11, tolerance: 2.375e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.888e+11, tolerance: 2.340e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.956e+11, tolerance: 1.930e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.124e+11, tolerance: 2.505e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.107e+11, tolerance: 2.297e+08
+  model = cd_fast.enet_coordinate_descent(
+  Lasso Regression: R² = 0.5398, CV R² = 0.1393, RMSE = 16615.31, MAE = 8727.58
+  ElasticNet: R² = 0.1804, CV R² = 0.1185, RMSE = 22173.61, MAE = 10786.66
+  SVR: R² = -0.3546, CV R² = -0.3475, RMSE = 28505.45, MAE = 14634.32
+  Random Forest: R² = 0.5825, CV R² = 0.4014, RMSE = 15824.76, MAE = 6783.88
+  Gradient Boosting: R² = 0.5825, CV R² = 0.4188, RMSE = 15824.48, MAE = 7668.87
+
+Processing zone: R4 (Data: 730 samples)
+NaN values in feature columns before filtering:
+  zip_code: 22 NaNs
+After removing NaNs in features: 708 samples
+  Linear Regression: R² = -0.4968, CV R² = -0.0619, RMSE = 77008.30, MAE = 34581.73
+  Ridge Regression: R² = 0.0901, CV R² = 0.0903, RMSE = 60042.02, MAE = 30678.24
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.336e+11, tolerance: 1.566e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.755e+11, tolerance: 1.776e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.767e+11, tolerance: 1.899e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.856e+11, tolerance: 1.700e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.368e+11, tolerance: 2.092e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.334e+11, tolerance: 2.152e+08
+  model = cd_fast.enet_coordinate_descent(
+  Lasso Regression: R² = 0.3712, CV R² = -0.0041, RMSE = 49911.27, MAE = 29735.94
+  ElasticNet: R² = 0.3505, CV R² = 0.1213, RMSE = 50725.83, MAE = 33005.30
+  SVR: R² = -0.5210, CV R² = -0.5459, RMSE = 77627.73, MAE = 45432.86
+  Random Forest: R² = 0.5806, CV R² = 0.2311, RMSE = 40764.22, MAE = 21580.47
+  Gradient Boosting: R² = 0.5219, CV R² = 0.2453, RMSE = 43522.02, MAE = 24923.27
+Skipping zone R5 - insufficient data (only 5 samples)
+
+--- BEST MODEL FOR EACH ZONING BUCKET (Feature Set: acreage_zipcode) ---
+
+ZONE: R3 (Samples: 4789, Features: 128, with outliers trimmed)
+Best model: Gradient Boosting
+R² Score: 0.5825
+CV R² Score: 0.4188
+RMSE: 15824.48
+MAE: 7668.87
+
+ZONE: R4 (Samples: 708, Features: 128, with outliers trimmed)
+Best model: Random Forest
+R² Score: 0.5806
+CV R² Score: 0.2311
+RMSE: 40764.22
+MAE: 21580.47
+
+================================================================================
+ANALYZING: Full data set, acreage, use parcel age, latitude/longitude
+================================================================================
+use age True
+641487
+After dropping NaN in required fields: 635846
+635846
+635846
+Trimmed 16878 outliers (2.7% of data)
+618968
+
+Processing zone: R3 (Data: 104260 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 104260 samples
+  Linear Regression: R² = 0.2253, CV R² = 0.0492, RMSE = 9362.61, MAE = 6145.36
+  Ridge Regression: R² = 0.2253, CV R² = 0.0499, RMSE = 9362.63, MAE = 6145.32
+  Lasso Regression: R² = 0.2253, CV R² = 0.0494, RMSE = 9362.61, MAE = 6145.31
+  ElasticNet: R² = 0.0980, CV R² = 0.0252, RMSE = 10103.10, MAE = 6673.53
+  SVR: R² = 0.0925, CV R² = 0.0475, RMSE = 10133.55, MAE = 5804.97
+  Random Forest: R² = 0.3833, CV R² = -0.0244, RMSE = 8353.62, MAE = 5245.98
+  Gradient Boosting: R² = 0.3872, CV R² = 0.2018, RMSE = 8327.36, MAE = 5347.73
+
+Processing zone: R4 (Data: 36469 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 36469 samples
+  Linear Regression: R² = 0.1684, CV R² = -0.2470, RMSE = 12631.17, MAE = 8367.63
+  Ridge Regression: R² = 0.1684, CV R² = -0.2422, RMSE = 12631.31, MAE = 8368.51
+  Lasso Regression: R² = 0.1684, CV R² = -0.2465, RMSE = 12631.18, MAE = 8367.72
+  ElasticNet: R² = 0.1069, CV R² = -0.0609, RMSE = 13089.65, MAE = 9014.32
+  SVR: R² = -0.0662, CV R² = -0.0432, RMSE = 14302.14, MAE = 8079.23
+  Random Forest: R² = 0.3245, CV R² = -0.0447, RMSE = 11384.33, MAE = 7278.86
+  Gradient Boosting: R² = 0.3089, CV R² = 0.1202, RMSE = 11514.83, MAE = 7503.05
+
+Processing zone: R5 (Data: 691 samples)
+NaN values in feature columns before filtering:
+After removing NaNs in features: 691 samples
+  Linear Regression: R² = -0.0125, CV R² = -0.0021, RMSE = 21133.23, MAE = 16853.03
+  Ridge Regression: R² = 0.0025, CV R² = 0.0026, RMSE = 20976.36, MAE = 16851.95
+  Lasso Regression: R² = -0.0124, CV R² = -0.0018, RMSE = 21131.93, MAE = 16852.69
+  ElasticNet: R² = 0.0074, CV R² = 0.0060, RMSE = 20924.02, MAE = 16834.22
+  SVR: R² = -0.8913, CV R² = -0.9650, RMSE = 28883.44, MAE = 19915.53
+  Random Forest: R² = -0.0051, CV R² = -0.0404, RMSE = 21055.54, MAE = 16618.72
+  Gradient Boosting: R² = -0.0038, CV R² = -0.0214, RMSE = 21041.78, MAE = 16843.22
+
+--- BEST MODEL FOR EACH ZONING BUCKET (Feature Set: acreage_age_latlon) ---
+
+ZONE: R3 (Samples: 104260, Features: 4, with outliers trimmed)
+Best model: Gradient Boosting
+R² Score: 0.3872
+CV R² Score: 0.2018
+RMSE: 8327.36
+MAE: 5347.73
+
+ZONE: R4 (Samples: 36469, Features: 4, with outliers trimmed)
+Best model: Random Forest
+R² Score: 0.3245
+CV R² Score: -0.0447
+RMSE: 11384.33
+MAE: 7278.86
+
+ZONE: R5 (Samples: 691, Features: 4, with outliers trimmed)
+Best model: ElasticNet
+R² Score: 0.0074
+CV R² Score: 0.0060
+RMSE: 20924.02
+MAE: 16834.22
+
+================================================================================
+ANALYZING: Full data set, acreage, parcel age, zip code encoded
+================================================================================
+use age True
+641487
+After dropping NaN in required fields: 635846
+635846
+635846
+Trimmed 16878 outliers (2.7% of data)
+618968
+
+Processing zone: R3 (Data: 104260 samples)
+NaN values in feature columns before filtering:
+  zip_code: 2493 NaNs
+After removing NaNs in features: 101767 samples
+  Linear Regression: R² = 0.2994, CV R² = -0.0389, RMSE = 8804.49, MAE = 5692.80
+  Ridge Regression: R² = 0.2991, CV R² = 0.0419, RMSE = 8806.45, MAE = 5692.76
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.869e+12, tolerance: 8.367e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.903e+12, tolerance: 8.019e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.213e+11, tolerance: 1.024e+09
+  model = cd_fast.enet_coordinate_descent(
+  Lasso Regression: R² = 0.2981, CV R² = 0.0152, RMSE = 8813.08, MAE = 5693.57
+  ElasticNet: R² = 0.1240, CV R² = -0.0038, RMSE = 9845.11, MAE = 6450.01
+  SVR: R² = 0.1746, CV R² = 0.0017, RMSE = 9556.69, MAE = 5553.83
+  Random Forest: R² = 0.3219, CV R² = 0.1279, RMSE = 8662.31, MAE = 5470.43
+  Gradient Boosting: R² = 0.3351, CV R² = 0.1915, RMSE = 8577.37, MAE = 5626.56
+
+Processing zone: R4 (Data: 36469 samples)
+NaN values in feature columns before filtering:
+  zip_code: 2266 NaNs
+After removing NaNs in features: 34203 samples
+  Linear Regression: R² = 0.2817, CV R² = -0.0039, RMSE = 11618.54, MAE = 7719.39
+  Ridge Regression: R² = 0.2819, CV R² = 0.0684, RMSE = 11617.07, MAE = 7719.07
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.362e+12, tolerance: 4.727e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.023e+12, tolerance: 5.261e+08
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.601e+12, tolerance: 5.999e+08
+  model = cd_fast.enet_coordinate_descent(
+  Lasso Regression: R² = 0.2819, CV R² = 0.0337, RMSE = 11617.38, MAE = 7718.53
+  ElasticNet: R² = 0.1573, CV R² = -0.0681, RMSE = 12585.11, MAE = 8719.37
+  SVR: R² = 0.0016, CV R² = -0.0932, RMSE = 13698.46, MAE = 7941.17
+  Random Forest: R² = 0.2426, CV R² = -0.0110, RMSE = 11931.13, MAE = 7778.57
+  Gradient Boosting: R² = 0.2672, CV R² = 0.0664, RMSE = 11735.23, MAE = 7863.32
+
+Processing zone: R5 (Data: 691 samples)
+NaN values in feature columns before filtering:
+  zip_code: 69 NaNs
+After removing NaNs in features: 622 samples
+  Linear Regression: R² = -0.0093, CV R² = -0.8249, RMSE = 22210.93, MAE = 17439.09
+  Ridge Regression: R² = -0.0092, CV R² = -0.3991, RMSE = 22209.63, MAE = 17371.34
+  Lasso Regression: R² = -0.0093, CV R² = -0.1132, RMSE = 22210.45, MAE = 17438.59
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.079e+10, tolerance: 1.745e+07
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 8.305e+10, tolerance: 2.100e+07
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.184e+10, tolerance: 2.153e+07
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.174e+10, tolerance: 2.104e+07
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.031e+10, tolerance: 2.192e+07
+  model = cd_fast.enet_coordinate_descent(
+/Users/joeyshoyer/Desktop/SFA/parcels/.venv/lib/python3.13/site-packages/sklearn/linear_model/_coordinate_descent.py:695: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 8.223e+10, tolerance: 2.154e+07
+  model = cd_fast.enet_coordinate_descent(
+  ElasticNet: R² = -0.0157, CV R² = -0.0524, RMSE = 22280.46, MAE = 17482.70
+  SVR: R² = -1.1457, CV R² = -1.0482, RMSE = 32384.20, MAE = 23723.59
+  Random Forest: R² = -0.0904, CV R² = -0.1736, RMSE = 23085.52, MAE = 17913.09
+  Gradient Boosting: R² = -0.0010, CV R² = -0.0134, RMSE = 22118.85, MAE = 17645.04
+
+--- BEST MODEL FOR EACH ZONING BUCKET (Feature Set: acreage_age_zipcode) ---
+
+ZONE: R3 (Samples: 101767, Features: 188, with outliers trimmed)
+Best model: Gradient Boosting
+R² Score: 0.3351
+CV R² Score: 0.1915
+RMSE: 8577.37
+MAE: 5626.56
+
+ZONE: R4 (Samples: 34203, Features: 188, with outliers trimmed)
+Best model: Ridge Regression
+R² Score: 0.2819
+CV R² Score: 0.0684
+RMSE: 11617.07
+MAE: 7719.07
+
+ZONE: R5 (Samples: 622, Features: 188, with outliers trimmed)
+Best model: Gradient Boosting
+R² Score: -0.0010
+CV R² Score: -0.0134
+RMSE: 22118.85
+MAE: 17645.04
+   zone          feature_set         best_model  r2_score  cv_r2_score  \
+0    R3         acreage_only  Gradient Boosting  0.527712     0.415569   
+1    R3       acreage_latlon      Random Forest  0.671108     0.336689   
+2    R3      acreage_zipcode  Gradient Boosting  0.582550     0.418756   
+3    R3   acreage_age_latlon  Gradient Boosting  0.387185     0.201765   
+4    R3  acreage_age_zipcode  Gradient Boosting  0.335115     0.191463   
+5    R4         acreage_only  Linear Regression  0.333984     0.222848   
+6    R4       acreage_latlon      Random Forest  0.482703     0.317476   
+7    R4      acreage_zipcode      Random Forest  0.580577     0.231147   
+8    R4   acreage_age_latlon      Random Forest  0.324468    -0.044694   
+9    R4  acreage_age_zipcode   Ridge Regression  0.281924     0.068431   
+10   R5   acreage_age_latlon         ElasticNet  0.007449     0.006044   
+11   R5  acreage_age_zipcode  Gradient Boosting -0.000976    -0.013366   
+
+            rmse  samples  
+0   18610.529406     4881  
+1   15530.379721     4881  
+2   15824.475919     4789  
+3    8327.359461   104260  
+4    8577.367586   101767  
+5   52199.699179      730  
+6   46004.014853      730  
+7   40764.222505      708  
+8   11384.325322    36469  
+9   11617.072955    34203  
+10  20924.021341      691  
+11  22118.852804      622  
+
+=== SINGLE METRIC MODEL SELECTION ===
+
+1. Using only R² Score:
+
+ZONE: R3
+Best feature set: acreage_latlon
+Best model: Random Forest
+R² Score: 0.6711
+CV R² Score: 0.3367
+RMSE: 15530.38
+
+ZONE: R4
+Best feature set: acreage_zipcode
+Best model: Random Forest
+R² Score: 0.5806
+CV R² Score: 0.2311
+RMSE: 40764.22
+
+ZONE: R5
+Best feature set: acreage_age_latlon
+Best model: ElasticNet
+R² Score: 0.0074
+CV R² Score: 0.0060
+RMSE: 20924.02
+
+2. Using only RMSE:
+
+ZONE: R3
+Best feature set: acreage_age_latlon
+Best model: Gradient Boosting
+R² Score: 0.3872
+CV R² Score: 0.2018
+RMSE: 8327.36
+
+ZONE: R4
+Best feature set: acreage_age_latlon
+Best model: Random Forest
+R² Score: 0.3245
+CV R² Score: -0.0447
+RMSE: 11384.33
+
+ZONE: R5
+Best feature set: acreage_age_latlon
+Best model: ElasticNet
+R² Score: 0.0074
+CV R² Score: 0.0060
+RMSE: 20924.02
+
+=== MULTI-METRIC MODEL SELECTION ===
+
+Balanced weighting (33% each):
+
+--- OVERALL BEST MODEL & FEATURE SET FOR EACH ZONE (MULTI-METRIC) ---
+Weights: R² = 0.33, CV R² = 0.34, RMSE = 0.33
+
+ZONE: R3 (Samples: 4789)
+Best feature set: acreage_zipcode
+Best model: Gradient Boosting
+R² Score: 0.5825 (normalized: 0.7364)
+CV R² Score: 0.4188 (normalized: 1.0000)
+RMSE: 15824.48 (normalized: 0.2709)
+Composite Score: 0.6724
+
+Top models by composite score:
+1. Gradient Boosting (acreage_zipcode): Score = 0.6724, R² = 0.5825, CV R² = 0.4188, RMSE = 15824.48
+2. Random Forest (acreage_latlon): Score = 0.6461, R² = 0.6711, CV R² = 0.3367, RMSE = 15530.38
+3. Gradient Boosting (acreage_only): Score = 0.5244, R² = 0.5277, CV R² = 0.4156, RMSE = 18610.53
+
+ZONE: R4 (Samples: 708)
+Best feature set: acreage_zipcode
+Best model: Random Forest
+R² Score: 0.5806 (normalized: 1.0000)
+CV R² Score: 0.2311 (normalized: 0.7616)
+RMSE: 40764.22 (normalized: 0.2802)
+Composite Score: 0.6814
+
+Top models by composite score:
+1. Random Forest (acreage_zipcode): Score = 0.6814, R² = 0.5806, CV R² = 0.2311, RMSE = 40764.22
+2. Random Forest (acreage_latlon): Score = 0.6119, R² = 0.4827, CV R² = 0.3175, RMSE = 46004.01
+3. Ridge Regression (acreage_age_zipcode): Score = 0.4343, R² = 0.2819, CV R² = 0.0684, RMSE = 11617.07
+
+ZONE: R5 (Samples: 691)
+Best feature set: acreage_age_latlon
+Best model: ElasticNet
+R² Score: 0.0074 (normalized: 1.0000)
+CV R² Score: 0.0060 (normalized: 1.0000)
+RMSE: 20924.02 (normalized: 1.0000)
+Composite Score: 1.0000
+
+Top models by composite score:
+1. ElasticNet (acreage_age_latlon): Score = 1.0000, R² = 0.0074, CV R² = 0.0060, RMSE = 20924.02
+2. Gradient Boosting (acreage_age_zipcode): Score = 0.0000, R² = -0.0010, CV R² = -0.0134, RMSE = 22118.85
+
+Cross-validation emphasis (50% CV R²):
+
+--- OVERALL BEST MODEL & FEATURE SET FOR EACH ZONE (MULTI-METRIC) ---
+Weights: R² = 0.25, CV R² = 0.50, RMSE = 0.25
+
+ZONE: R3 (Samples: 4789)
+Best feature set: acreage_zipcode
+Best model: Gradient Boosting
+R² Score: 0.5825 (normalized: 0.7364)
+CV R² Score: 0.4188 (normalized: 1.0000)
+RMSE: 15824.48 (normalized: 0.2709)
+Composite Score: 0.7518
+
+Top models by composite score:
+1. Gradient Boosting (acreage_zipcode): Score = 0.7518, R² = 0.5825, CV R² = 0.4188, RMSE = 15824.48
+2. Random Forest (acreage_latlon): Score = 0.6444, R² = 0.6711, CV R² = 0.3367, RMSE = 15530.38
+3. Gradient Boosting (acreage_only): Score = 0.6363, R² = 0.5277, CV R² = 0.4156, RMSE = 18610.53
+
+ZONE: R4 (Samples: 730)
+Best feature set: acreage_latlon
+Best model: Random Forest
+R² Score: 0.4827 (normalized: 0.6723)
+CV R² Score: 0.3175 (normalized: 1.0000)
+RMSE: 46004.01 (normalized: 0.1518)
+Composite Score: 0.7060
+
+Top models by composite score:
+1. Random Forest (acreage_latlon): Score = 0.7060, R² = 0.4827, CV R² = 0.3175, RMSE = 46004.01
+2. Random Forest (acreage_zipcode): Score = 0.7009, R² = 0.5806, CV R² = 0.2311, RMSE = 40764.22
+3. Linear Regression (acreage_only): Score = 0.4129, R² = 0.3340, CV R² = 0.2228, RMSE = 52199.70
+
+ZONE: R5 (Samples: 691)
+Best feature set: acreage_age_latlon
+Best model: ElasticNet
+R² Score: 0.0074 (normalized: 1.0000)
+CV R² Score: 0.0060 (normalized: 1.0000)
+RMSE: 20924.02 (normalized: 1.0000)
+Composite Score: 1.0000
+
+Top models by composite score:
+1. ElasticNet (acreage_age_latlon): Score = 1.0000, R² = 0.0074, CV R² = 0.0060, RMSE = 20924.02
+2. Gradient Boosting (acreage_age_zipcode): Score = 0.0000, R² = -0.0010, CV R² = -0.0134, RMSE = 22118.85
+
+RMSE emphasis (50% RMSE):
+
+--- OVERALL BEST MODEL & FEATURE SET FOR EACH ZONE (MULTI-METRIC) ---
+Weights: R² = 0.25, CV R² = 0.25, RMSE = 0.50
+
+ZONE: R3 (Samples: 4789)
+Best feature set: acreage_zipcode
+Best model: Gradient Boosting
+R² Score: 0.5825 (normalized: 0.7364)
+CV R² Score: 0.4188 (normalized: 1.0000)
+RMSE: 15824.48 (normalized: 0.2709)
+Composite Score: 0.5696
+
+Top models by composite score:
+1. Gradient Boosting (acreage_zipcode): Score = 0.5696, R² = 0.5825, CV R² = 0.4188, RMSE = 15824.48
+2. Random Forest (acreage_latlon): Score = 0.5595, R² = 0.6711, CV R² = 0.3367, RMSE = 15530.38
+3. Gradient Boosting (acreage_age_latlon): Score = 0.5501, R² = 0.3872, CV R² = 0.2018, RMSE = 8327.36
+
+ZONE: R4 (Samples: 708)
+Best feature set: acreage_zipcode
+Best model: Random Forest
+R² Score: 0.5806 (normalized: 1.0000)
+CV R² Score: 0.2311 (normalized: 0.7616)
+RMSE: 40764.22 (normalized: 0.2802)
+Composite Score: 0.5805
+
+Top models by composite score:
+1. Random Forest (acreage_zipcode): Score = 0.5805, R² = 0.5806, CV R² = 0.2311, RMSE = 40764.22
+2. Ridge Regression (acreage_age_zipcode): Score = 0.5752, R² = 0.2819, CV R² = 0.0684, RMSE = 11617.07
+3. Random Forest (acreage_age_latlon): Score = 0.5356, R² = 0.3245, CV R² = -0.0447, RMSE = 11384.33
+
+ZONE: R5 (Samples: 691)
+Best feature set: acreage_age_latlon
+Best model: ElasticNet
+R² Score: 0.0074 (normalized: 1.0000)
+CV R² Score: 0.0060 (normalized: 1.0000)
+RMSE: 20924.02 (normalized: 1.0000)
+Composite Score: 1.0000
+
+Top models by composite score:
+1. ElasticNet (acreage_age_latlon): Score = 1.0000, R² = 0.0074, CV R² = 0.0060, RMSE = 20924.02
+2. Gradient Boosting (acreage_age_zipcode): Score = 0.0000, R² = -0.0010, CV R² = -0.0134, RMSE = 22118.85
+
+Analysis complete! Check the CSV files and PNG visualizations for detailed results.

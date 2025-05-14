@@ -22,6 +22,9 @@ rtree = ">=1.4.0,<2.0.0"
 seaborn = "^0.13.2"
 
 
+[tool.poetry.group.dev.dependencies]
+notebook = "^7.4.2"
+
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
